@@ -32,11 +32,11 @@
 #import <UIKit/UIKit.h>
 
 @interface MainController : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-    UIWindow *mMainWindow;
-    UITabBarController *mTabBarController;
+  UIWindow*               mMainWindow;
+  UINavigationController* mNavigationController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *mMainWindow;
-@property (nonatomic, retain) IBOutlet UITabBarController *mTabBarController;
+@property (nonatomic, retain) IBOutlet UINavigationController *mNavigationController;
 
 @end

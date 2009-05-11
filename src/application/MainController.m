@@ -35,33 +35,16 @@
 @implementation MainController
 
 @synthesize mMainWindow;
-@synthesize mTabBarController;
+@synthesize mNavigationController;
 
+- (void)applicationDidFinishLaunching:(UIApplication*)application {
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {
-
-    // Add the tab bar controller's current view as a subview of the window
-    [mMainWindow addSubview:mTabBarController.view];
 }
-
-
-/*
-// Optional UITabBarControllerDelegate method
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-}
-*/
-
-/*
-// Optional UITabBarControllerDelegate method
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed {
-}
-*/
-
 
 - (void)dealloc {
-    [mTabBarController release];
-    [mMainWindow release];
-    [super dealloc];
+  [mNavigationController release];
+  [mMainWindow release];
+  [super dealloc];
 }
 
 @end
