@@ -3,11 +3,19 @@
 *~.nib
 *~.xib
 
+*.orig
+*.rej
+*~
+*.o
+.#*
+a.out
+
+# The following ignores all files in the .xcodeproj bundle,
+# And then adds back in only the project (skipping the user files)
+*.xcodeproj/
+!*.xcodeproj/project.pbxproj
+
 build
 
-*.pbxuser
-*.perspective
-*.perspectivev3
 
-*.mode1v3
-*.mode2v3
+
