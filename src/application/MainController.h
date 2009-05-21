@@ -30,13 +30,11 @@
  * ***** END LICENSE BLOCK ***** */
 
 #import <UIKit/UIKit.h>
+#import <Three20/Three20.h>
 
 @interface MainController : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-  UIWindow*               mMainWindow;
-  UINavigationController* mNavigationController;
+  IBOutlet UIWindow*           mMainWindow;
+  IBOutlet UITabBarController* mTabBarController;
 }
-
-@property (nonatomic, retain) IBOutlet UIWindow *mMainWindow;
-@property (nonatomic, retain) IBOutlet UINavigationController *mNavigationController;
 
 @end

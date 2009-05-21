@@ -34,16 +34,21 @@
 
 @implementation MainController
 
-@synthesize mMainWindow;
-@synthesize mNavigationController;
-
-- (void)applicationDidFinishLaunching:(UIApplication*)application {
-
+- (void)applicationDidFinishLaunching:(UIApplication*)application
+{
+  [TTURLRequestQueue mainQueue].maxContentLength = 0;
+  [mMainWindow addSubview:[mTabBarController view]];
+  [mMainWindow makeKeyAndVisible];
 }
 
-- (void)dealloc {
-  [mNavigationController release];
-  [mMainWindow release];
+- (void)applicationDidReceiveMemoryWarning:(UIApplication*)application
+{
+  [[TTStyleSheet globalStyleSheet] freeMemory];
+  [[TTURLCache sharedCache] removeAll:NO];
+}
+
+- (void)dealloc
+{
   [super dealloc];
 }
 

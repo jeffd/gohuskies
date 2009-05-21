@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B2264EE0F734BEF00DDDA04 /* TeamView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2264ED0F734BEF00DDDA04 /* TeamView.xib */; };
+		0B2264EE0F734BEF00DDDA04 /* TeamListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2264ED0F734BEF00DDDA04 /* TeamListView.xib */; };
 		0B31B95F0F86881700275DD9 /* Basketball_pictogram.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B31B9530F86881700275DD9 /* Basketball_pictogram.png */; };
 		0B31B9600F86881700275DD9 /* Baseball_pictogram.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B31B9540F86881700275DD9 /* Baseball_pictogram.png */; };
 		0B31B9610F86881700275DD9 /* Football_pictogram.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B31B9550F86881700275DD9 /* Football_pictogram.png */; };
@@ -22,8 +22,28 @@
 		0B31B96A0F86881700275DD9 /* Field_hockey_pictogram.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B31B95E0F86881700275DD9 /* Field_hockey_pictogram.png */; };
 		0B31B96D0F86888C00275DD9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B31B96B0F86888C00275DD9 /* logo.png */; };
 		0B31B96E0F86888C00275DD9 /* seal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B31B96C0F86888C00275DD9 /* seal.png */; };
-		0B88D7E20F87EA41006A1B19 /* FeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B88D7E10F87EA41006A1B19 /* FeedView.xib */; };
+		0B6E77B00FBC7C2F00C24972 /* NUStyledImageField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6E77AE0FBC7C2F00C24972 /* NUStyledImageField.m */; };
+		0B77053F0FC2DC2E004A8D08 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7705370FC2DC2E004A8D08 /* 18-envelope.png */; };
+		0B7705400FC2DC2E004A8D08 /* 41-picture-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7705380FC2DC2E004A8D08 /* 41-picture-frame.png */; };
+		0B7705410FC2DC2E004A8D08 /* 42-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B7705390FC2DC2E004A8D08 /* 42-photos.png */; };
+		0B7705420FC2DC2E004A8D08 /* 45-movie1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B77053A0FC2DC2E004A8D08 /* 45-movie1.png */; };
+		0B7705430FC2DC2E004A8D08 /* 67-tshirt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B77053B0FC2DC2E004A8D08 /* 67-tshirt.png */; };
+		0B7705440FC2DC2E004A8D08 /* 68-display.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B77053C0FC2DC2E004A8D08 /* 68-display.png */; };
+		0B7705450FC2DC2E004A8D08 /* 70-tv.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B77053D0FC2DC2E004A8D08 /* 70-tv.png */; };
+		0B7705460FC2DC2E004A8D08 /* 46-movie2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B77053E0FC2DC2E004A8D08 /* 46-movie2.png */; };
+		0B77054B0FC2DCEF004A8D08 /* TeamListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B77054A0FC2DCEF004A8D08 /* TeamListViewController.m */; };
+		0B77056E0FC2DE3D004A8D08 /* 66-microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B77056D0FC2DE3D004A8D08 /* 66-microphone.png */; };
+		0B88D7E20F87EA41006A1B19 /* HeadlineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B88D7E10F87EA41006A1B19 /* HeadlineView.xib */; };
 		0B88D83A0F87EF2A006A1B19 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B88D8390F87EF2A006A1B19 /* QuartzCore.framework */; };
+		0BF297BF0FC327C10058229B /* gonu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF297BE0FC327C10058229B /* gonu.png */; };
+		0BF297C30FC3296A0058229B /* northeastern-n.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF297C20FC3296A0058229B /* northeastern-n.png */; };
+		0BF297E80FC32FFF0058229B /* Olympic_pictogram_Athletics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF297E70FC32FFF0058229B /* Olympic_pictogram_Athletics.png */; };
+		0BF297EA0FC330770058229B /* Olympic_pictogram_Ice_hockey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF297E90FC330770058229B /* Olympic_pictogram_Ice_hockey.png */; };
+		0BF297F30FC3322E0058229B /* VideoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF297F20FC3322E0058229B /* VideoDataSource.m */; };
+		0BF298060FC332CD0058229B /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF298050FC332CD0058229B /* VideoViewController.m */; };
+		0BF298120FC333820058229B /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF298110FC333820058229B /* VideoView.xib */; };
+		0BFA6A390FB8B0B2007EBE4F /* FeedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA6A380FB8B0B2007EBE4F /* FeedDataSource.m */; };
+		0BFA6A670FB8BE47007EBE4F /* HeadlineNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA6A660FB8BE47007EBE4F /* HeadlineNewsController.m */; };
 		0BFCE4380FA6562A004D7C95 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCE4220FA6562A004D7C95 /* CTidy.m */; };
 		0BFCE4390FA6562A004D7C95 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCE4230FA6562A004D7C95 /* CXMLNode.m */; };
 		0BFCE43A0FA6562A004D7C95 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCE4250FA6562A004D7C95 /* CXMLNode_XPathExtensions.m */; };
@@ -62,7 +82,6 @@
 		0BFCE4920FA65644004D7C95 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCE4750FA65644004D7C95 /* utf8.c */; };
 		0BFCE4930FA65644004D7C95 /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCE4780FA65644004D7C95 /* win32tc.c */; };
 		0BFCE4AF0FA656E7004D7C95 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFCE49C0FA6565E004D7C95 /* libThree20.a */; };
-		0BFCE4D60FA65B4C004D7C95 /* RootFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFCE4D50FA65B4C004D7C95 /* RootFeedViewController.m */; };
 		1D3623260D0F684500981E51 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MainController.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -102,7 +121,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B2264ED0F734BEF00DDDA04 /* TeamView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TeamView.xib; path = resources/localized/TeamView.xib; sourceTree = "<group>"; };
+		0B2264ED0F734BEF00DDDA04 /* TeamListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TeamListView.xib; path = resources/localized/TeamListView.xib; sourceTree = "<group>"; };
 		0B31B9530F86881700275DD9 /* Basketball_pictogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Basketball_pictogram.png; path = resources/images/pictograms/Basketball_pictogram.png; sourceTree = "<group>"; };
 		0B31B9540F86881700275DD9 /* Baseball_pictogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Baseball_pictogram.png; path = resources/images/pictograms/Baseball_pictogram.png; sourceTree = "<group>"; };
 		0B31B9550F86881700275DD9 /* Football_pictogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Football_pictogram.png; path = resources/images/pictograms/Football_pictogram.png; sourceTree = "<group>"; };
@@ -117,8 +136,34 @@
 		0B31B95E0F86881700275DD9 /* Field_hockey_pictogram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Field_hockey_pictogram.png; path = resources/images/pictograms/Field_hockey_pictogram.png; sourceTree = "<group>"; };
 		0B31B96B0F86888C00275DD9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = resources/images/logos/logo.png; sourceTree = "<group>"; };
 		0B31B96C0F86888C00275DD9 /* seal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = seal.png; path = resources/images/logos/seal.png; sourceTree = "<group>"; };
-		0B88D7E10F87EA41006A1B19 /* FeedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FeedView.xib; path = resources/localized/FeedView.xib; sourceTree = "<group>"; };
+		0B6E77AE0FBC7C2F00C24972 /* NUStyledImageField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NUStyledImageField.m; path = src/views/NUStyledImageField.m; sourceTree = "<group>"; };
+		0B6E77AF0FBC7C2F00C24972 /* NUStyledImageField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NUStyledImageField.h; path = src/views/NUStyledImageField.h; sourceTree = "<group>"; };
+		0B7705370FC2DC2E004A8D08 /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "18-envelope.png"; path = "resources/images/icons/18-envelope.png"; sourceTree = "<group>"; };
+		0B7705380FC2DC2E004A8D08 /* 41-picture-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "41-picture-frame.png"; path = "resources/images/icons/41-picture-frame.png"; sourceTree = "<group>"; };
+		0B7705390FC2DC2E004A8D08 /* 42-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "42-photos.png"; path = "resources/images/icons/42-photos.png"; sourceTree = "<group>"; };
+		0B77053A0FC2DC2E004A8D08 /* 45-movie1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "45-movie1.png"; path = "resources/images/icons/45-movie1.png"; sourceTree = "<group>"; };
+		0B77053B0FC2DC2E004A8D08 /* 67-tshirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "67-tshirt.png"; path = "resources/images/icons/67-tshirt.png"; sourceTree = "<group>"; };
+		0B77053C0FC2DC2E004A8D08 /* 68-display.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "68-display.png"; path = "resources/images/icons/68-display.png"; sourceTree = "<group>"; };
+		0B77053D0FC2DC2E004A8D08 /* 70-tv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "70-tv.png"; path = "resources/images/icons/70-tv.png"; sourceTree = "<group>"; };
+		0B77053E0FC2DC2E004A8D08 /* 46-movie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "46-movie2.png"; path = "resources/images/icons/46-movie2.png"; sourceTree = "<group>"; };
+		0B7705490FC2DCEF004A8D08 /* TeamListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeamListViewController.h; path = src/controllers/TeamListViewController.h; sourceTree = "<group>"; };
+		0B77054A0FC2DCEF004A8D08 /* TeamListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeamListViewController.m; path = src/controllers/TeamListViewController.m; sourceTree = "<group>"; };
+		0B77056D0FC2DE3D004A8D08 /* 66-microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "66-microphone.png"; path = "resources/images/icons/66-microphone.png"; sourceTree = "<group>"; };
+		0B88D7E10F87EA41006A1B19 /* HeadlineView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HeadlineView.xib; path = resources/localized/HeadlineView.xib; sourceTree = "<group>"; };
 		0B88D8390F87EF2A006A1B19 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		0BF297BE0FC327C10058229B /* gonu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gonu.png; path = resources/images/logos/gonu.png; sourceTree = "<group>"; };
+		0BF297C20FC3296A0058229B /* northeastern-n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "northeastern-n.png"; path = "resources/images/icons/northeastern-n.png"; sourceTree = "<group>"; };
+		0BF297E70FC32FFF0058229B /* Olympic_pictogram_Athletics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Olympic_pictogram_Athletics.png; path = resources/images/pictograms/Olympic_pictogram_Athletics.png; sourceTree = "<group>"; };
+		0BF297E90FC330770058229B /* Olympic_pictogram_Ice_hockey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Olympic_pictogram_Ice_hockey.png; path = resources/images/pictograms/Olympic_pictogram_Ice_hockey.png; sourceTree = "<group>"; };
+		0BF297F10FC3322E0058229B /* VideoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoDataSource.h; path = src/feeds/VideoDataSource.h; sourceTree = "<group>"; };
+		0BF297F20FC3322E0058229B /* VideoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoDataSource.m; path = src/feeds/VideoDataSource.m; sourceTree = "<group>"; };
+		0BF298040FC332CD0058229B /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoViewController.h; path = src/controllers/VideoViewController.h; sourceTree = "<group>"; };
+		0BF298050FC332CD0058229B /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoViewController.m; path = src/controllers/VideoViewController.m; sourceTree = "<group>"; };
+		0BF298110FC333820058229B /* VideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = VideoView.xib; path = resources/localized/VideoView.xib; sourceTree = "<group>"; };
+		0BFA6A370FB8B0B2007EBE4F /* FeedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedDataSource.h; path = src/feeds/FeedDataSource.h; sourceTree = "<group>"; };
+		0BFA6A380FB8B0B2007EBE4F /* FeedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedDataSource.m; path = src/feeds/FeedDataSource.m; sourceTree = "<group>"; };
+		0BFA6A650FB8BE47007EBE4F /* HeadlineNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeadlineNewsController.h; path = src/controllers/HeadlineNewsController.h; sourceTree = "<group>"; };
+		0BFA6A660FB8BE47007EBE4F /* HeadlineNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeadlineNewsController.m; path = src/controllers/HeadlineNewsController.m; sourceTree = "<group>"; };
 		0BFCE41F0FA6562A004D7C95 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchXML.h; path = frameworks/touchcode/TouchXML/Common/Source/TouchXML.h; sourceTree = "<group>"; };
 		0BFCE4210FA6562A004D7C95 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		0BFCE4220FA6562A004D7C95 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
@@ -195,8 +240,6 @@
 		0BFCE4780FA65644004D7C95 /* win32tc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32tc.c; sourceTree = "<group>"; };
 		0BFCE4790FA65644004D7C95 /* win32tc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32tc.h; sourceTree = "<group>"; };
 		0BFCE4940FA6565E004D7C95 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = frameworks/three20/src/Three20.xcodeproj; sourceTree = "<group>"; };
-		0BFCE4D40FA65B4C004D7C95 /* RootFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootFeedViewController.h; path = src/feeds/RootFeedViewController.h; sourceTree = "<group>"; };
-		0BFCE4D50FA65B4C004D7C95 /* RootFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootFeedViewController.m; path = src/feeds/RootFeedViewController.m; sourceTree = "<group>"; };
 		0BFCE4FD0FA65E58004D7C95 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = frameworks/three20/src/Three20.bundle; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainController.h; path = src/application/MainController.h; sourceTree = "<group>"; };
@@ -231,6 +274,7 @@
 			children = (
 				0B2264720F7313AC00DDDA04 /* Application */,
 				0B88D81A0F87EEA3006A1B19 /* Feeds */,
+				0B6E77B20FBC7C3600C24972 /* Views */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -240,6 +284,7 @@
 			children = (
 				1D3623240D0F684500981E51 /* MainController.h */,
 				1D3623250D0F684500981E51 /* MainController.m */,
+				0B7705600FC2DD7E004A8D08 /* Root Views */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -247,6 +292,8 @@
 		0B31B94F0F86880000275DD9 /* Pictograms */ = {
 			isa = PBXGroup;
 			children = (
+				0BF297E70FC32FFF0058229B /* Olympic_pictogram_Athletics.png */,
+				0BF297E90FC330770058229B /* Olympic_pictogram_Ice_hockey.png */,
 				0B31B9530F86881700275DD9 /* Basketball_pictogram.png */,
 				0B31B9540F86881700275DD9 /* Baseball_pictogram.png */,
 				0B31B9550F86881700275DD9 /* Football_pictogram.png */,
@@ -266,18 +313,60 @@
 		0B31B9500F86880800275DD9 /* Logos */ = {
 			isa = PBXGroup;
 			children = (
+				0BF297BE0FC327C10058229B /* gonu.png */,
 				0B31B96B0F86888C00275DD9 /* logo.png */,
 				0B31B96C0F86888C00275DD9 /* seal.png */,
 			);
 			name = Logos;
 			sourceTree = "<group>";
 		};
+		0B6E77B20FBC7C3600C24972 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B6E77AF0FBC7C2F00C24972 /* NUStyledImageField.h */,
+				0B6E77AE0FBC7C2F00C24972 /* NUStyledImageField.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0B7705360FC2DC21004A8D08 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0BF297C20FC3296A0058229B /* northeastern-n.png */,
+				0B77056D0FC2DE3D004A8D08 /* 66-microphone.png */,
+				0B7705370FC2DC2E004A8D08 /* 18-envelope.png */,
+				0B7705380FC2DC2E004A8D08 /* 41-picture-frame.png */,
+				0B7705390FC2DC2E004A8D08 /* 42-photos.png */,
+				0B77053A0FC2DC2E004A8D08 /* 45-movie1.png */,
+				0B77053B0FC2DC2E004A8D08 /* 67-tshirt.png */,
+				0B77053C0FC2DC2E004A8D08 /* 68-display.png */,
+				0B77053D0FC2DC2E004A8D08 /* 70-tv.png */,
+				0B77053E0FC2DC2E004A8D08 /* 46-movie2.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		0B7705600FC2DD7E004A8D08 /* Root Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B7705490FC2DCEF004A8D08 /* TeamListViewController.h */,
+				0B77054A0FC2DCEF004A8D08 /* TeamListViewController.m */,
+				0BFA6A650FB8BE47007EBE4F /* HeadlineNewsController.h */,
+				0BFA6A660FB8BE47007EBE4F /* HeadlineNewsController.m */,
+				0BF298040FC332CD0058229B /* VideoViewController.h */,
+				0BF298050FC332CD0058229B /* VideoViewController.m */,
+			);
+			name = "Root Views";
+			sourceTree = "<group>";
+		};
 		0B88D81A0F87EEA3006A1B19 /* Feeds */ = {
 			isa = PBXGroup;
 			children = (
 				0BFCE4150FA65546004D7C95 /* TouchXML */,
-				0BFCE4D40FA65B4C004D7C95 /* RootFeedViewController.h */,
-				0BFCE4D50FA65B4C004D7C95 /* RootFeedViewController.m */,
+				0BFA6A370FB8B0B2007EBE4F /* FeedDataSource.h */,
+				0BFA6A380FB8B0B2007EBE4F /* FeedDataSource.m */,
+				0BF297F10FC3322E0058229B /* VideoDataSource.h */,
+				0BF297F20FC3322E0058229B /* VideoDataSource.m */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -448,11 +537,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B7705360FC2DC21004A8D08 /* Icons */,
 				0B31B9500F86880800275DD9 /* Logos */,
 				0B31B94F0F86880000275DD9 /* Pictograms */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
-				0B2264ED0F734BEF00DDDA04 /* TeamView.xib */,
-				0B88D7E10F87EA41006A1B19 /* FeedView.xib */,
+				0B2264ED0F734BEF00DDDA04 /* TeamListView.xib */,
+				0B88D7E10F87EA41006A1B19 /* HeadlineView.xib */,
+				0BF298110FC333820058229B /* VideoView.xib */,
 				8D1107310486CEB800E47090 /* gohuskies-Info.plist */,
 			);
 			name = Resources;
@@ -532,7 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
-				0B2264EE0F734BEF00DDDA04 /* TeamView.xib in Resources */,
+				0B2264EE0F734BEF00DDDA04 /* TeamListView.xib in Resources */,
 				0B31B95F0F86881700275DD9 /* Basketball_pictogram.png in Resources */,
 				0B31B9600F86881700275DD9 /* Baseball_pictogram.png in Resources */,
 				0B31B9610F86881700275DD9 /* Football_pictogram.png in Resources */,
@@ -547,7 +638,21 @@
 				0B31B96A0F86881700275DD9 /* Field_hockey_pictogram.png in Resources */,
 				0B31B96D0F86888C00275DD9 /* logo.png in Resources */,
 				0B31B96E0F86888C00275DD9 /* seal.png in Resources */,
-				0B88D7E20F87EA41006A1B19 /* FeedView.xib in Resources */,
+				0B88D7E20F87EA41006A1B19 /* HeadlineView.xib in Resources */,
+				0B77053F0FC2DC2E004A8D08 /* 18-envelope.png in Resources */,
+				0B7705400FC2DC2E004A8D08 /* 41-picture-frame.png in Resources */,
+				0B7705410FC2DC2E004A8D08 /* 42-photos.png in Resources */,
+				0B7705420FC2DC2E004A8D08 /* 45-movie1.png in Resources */,
+				0B7705430FC2DC2E004A8D08 /* 67-tshirt.png in Resources */,
+				0B7705440FC2DC2E004A8D08 /* 68-display.png in Resources */,
+				0B7705450FC2DC2E004A8D08 /* 70-tv.png in Resources */,
+				0B7705460FC2DC2E004A8D08 /* 46-movie2.png in Resources */,
+				0B77056E0FC2DE3D004A8D08 /* 66-microphone.png in Resources */,
+				0BF297BF0FC327C10058229B /* gonu.png in Resources */,
+				0BF297C30FC3296A0058229B /* northeastern-n.png in Resources */,
+				0BF297E80FC32FFF0058229B /* Olympic_pictogram_Athletics.png in Resources */,
+				0BF297EA0FC330770058229B /* Olympic_pictogram_Ice_hockey.png in Resources */,
+				0BF298120FC333820058229B /* VideoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,7 +702,12 @@
 				0BFCE4910FA65644004D7C95 /* tmbstr.c in Sources */,
 				0BFCE4920FA65644004D7C95 /* utf8.c in Sources */,
 				0BFCE4930FA65644004D7C95 /* win32tc.c in Sources */,
-				0BFCE4D60FA65B4C004D7C95 /* RootFeedViewController.m in Sources */,
+				0BFA6A390FB8B0B2007EBE4F /* FeedDataSource.m in Sources */,
+				0BFA6A670FB8BE47007EBE4F /* HeadlineNewsController.m in Sources */,
+				0B6E77B00FBC7C2F00C24972 /* NUStyledImageField.m in Sources */,
+				0B77054B0FC2DCEF004A8D08 /* TeamListViewController.m in Sources */,
+				0BF297F30FC3322E0058229B /* VideoDataSource.m in Sources */,
+				0BF298060FC332CD0058229B /* VideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +752,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeff Dlouhy";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeff Dlouhy";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -657,7 +768,9 @@
 					"-lxml2",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				PROVISIONING_PROFILE = "710F01C9-3215-4FC6-8113-B0ABA325751A";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "710F01C9-3215-4FC6-8113-B0ABA325751A";
+				SDKROOT = iphoneos2.2.1;
 			};
 			name = Debug;
 		};
@@ -679,7 +792,7 @@
 					"-lxml2",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.0;
+				SDKROOT = iphoneos2.2.1;
 			};
 			name = Release;
 		};
