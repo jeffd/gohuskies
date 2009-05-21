@@ -31,7 +31,6 @@
 
 #import "HeadlineNewsController.h"
 #import "FeedDataSource.h"
-#import "FeedDetailViewController.h"
 
 @implementation HeadlineNewsController
 
