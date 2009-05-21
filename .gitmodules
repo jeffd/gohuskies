@@ -1,6 +1,4 @@
-[submodule "frameworks/three20"]
+[submodule "three20"]
 	path = frameworks/three20
 	url = git://github.com/joehewitt/three20.git
-[submodule "frameworks/touchcode"]
-	path = frameworks/touchcode
-	url = /Users/jdlouhy/Development/iPhone/touchcode/.git
+
