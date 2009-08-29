@@ -29,9 +29,7 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#import <Three20/Three20.h>
-
-@interface HeadlineNewsController : TTTableViewController <TTNavigationDelegate> {
+@interface RecipeDetailViewController : UITableViewController <UINavigationControllerDelegate> {
 
 }
 

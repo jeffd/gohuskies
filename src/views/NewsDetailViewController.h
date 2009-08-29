@@ -29,10 +29,20 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#import <Three20/Three20.h>
+#import <Foundation/Foundation.h>
 
-@interface TeamListViewController : TTTableViewController <TTNavigationDelegate> {
+@interface NewsDetailViewController : UIViewController <UINavigationControllerDelegate, UIWebViewDelegate> {
+	NSManagedObject *newsEntry;
+	NSMutableData* mResponseData;
+	NSURL* mBaseURL;
 
+  UIWebView* mWebView;
 }
 
+@property (nonatomic, retain) NSManagedObject* newsEntry;
+@property (nonatomic, retain) IBOutlet UIWebView* webView;
+
+- (IBAction)shareItem:(id)sender;
+
 @end
+

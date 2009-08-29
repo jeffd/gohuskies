@@ -28,35 +28,3 @@
  *  Jeff Dlouhy <jeff.dlouhy@gmail.com>
  *
  * ***** END LICENSE BLOCK ***** */
-
-#import "HeadlineNewsController.h"
-#import "FeedDataSource.h"
-
-@implementation HeadlineNewsController
-
-- (void)loadView
-{
-  [super loadView];
-
-  TTNavigationCenter* nav = [TTNavigationCenter defaultCenter];
-  nav.mainViewController = self.navigationController;
-  nav.delegate = self;
-
-  self.navigationBarTintColor = [UIColor colorWithRed:0.8 green:0.0 blue:0.0 alpha:0.0];
-
-  self.tableView = [[[UITableView alloc] initWithFrame:self.view.bounds
-                                        style:UITableViewStylePlain] autorelease];
-  self.tableView.rowHeight = 90;
-	self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth
-    | UIViewAutoresizingFlexibleHeight;
-  [self.view addSubview:self.tableView];
-}
-
-- (id<TTTableViewDataSource>)createDataSource {
-  FeedDataSource* dataSource = [[FeedDataSource alloc] initWithFeed:@"http://gonu.com/rss.xml"];
-  [dataSource.delegates addObject:self];
-  [dataSource load:TTURLRequestCachePolicyNoCache nextPage:NO];
-  return dataSource;
-}
-
-@end

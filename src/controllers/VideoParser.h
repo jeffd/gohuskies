@@ -29,16 +29,16 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#import <Three20/Three20.h>
+#import <UIKit/UIKit.h>
 
-@interface NUStyledImageField : TTImageTableField  {
+#import "FeedParser.h"
+#import "VideoViewController.h"
 
+@interface VideoParser : FeedParser {
+  NSMutableArray* mCurrentGroupItems;
+  NSSet* mIntegerElementNames;
 }
 
-@end
-
-@interface NUStyledImageFieldCell : TTIconTableFieldCell {
-
-}
+@property (nonatomic, retain) NSMutableArray* currentGroupVideos;
 
 @end

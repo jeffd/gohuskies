@@ -1,56 +1,152 @@
-/* ***** BEGIN LICENSE BLOCK *****
- * Version: MIT
- *
- * Copyright (c) 2009 Jeff Dlouhy
- *
- * Permission is hereby granted, free of charge, to any person
- * obtaining a copy of this software and associated documentation
- * files (the "Software"), to deal in the Software without
- * restriction, including without limitation the rights to use,
- * copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following
- * conditions:
- *
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
- * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
- *
- * Contributor(s):
- *  Jeff Dlouhy <jeff.dlouhy@gmail.com>
- *
- * ***** END LICENSE BLOCK ***** */
+//
+//  gohuskiesAppDelegate.m
+//  gohuskies
+//
+//  Created by Jeff Dlouhy on 7/2/09.
+//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//
 
 #import "MainController.h"
+#import "Constants.h"
+#import "HeadlineViewController.h"
 
 
 @implementation MainController
 
-- (void)applicationDidFinishLaunching:(UIApplication*)application
-{
-  [TTURLRequestQueue mainQueue].maxContentLength = 0;
-  [mMainWindow addSubview:[mTabBarController view]];
-  [mMainWindow makeKeyAndVisible];
+@synthesize window;
+@synthesize tabBarController;
+
+
+#pragma mark -
+#pragma mark Application lifecycle
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+  [window addSubview:tabBarController.view];
+  [window makeKeyAndVisible];
 }
 
-- (void)applicationDidReceiveMemoryWarning:(UIApplication*)application
-{
-  [[TTStyleSheet globalStyleSheet] freeMemory];
-  [[TTURLCache sharedCache] removeAll:NO];
+/**
+   applicationWillTerminate: saves changes in the application's managed object context before the application terminates.
+*/
+- (void)applicationWillTerminate:(UIApplication *)application {
+
+  NSError *error = nil;
+  if (managedObjectContext != nil) {
+    if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+			// Update to handle the error appropriately.
+			NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+			exit(-1);  // Fail
+    }
+  }
 }
 
-- (void)dealloc
-{
-  [super dealloc];
+
+#pragma mark -
+#pragma mark Saving
+
+/**
+   Performs the save action for the application, which is to send the save:
+   message to the application's managed object context.
+*/
+- (IBAction)saveAction:(id)sender {
+
+  NSError *error = nil;
+  if (![[self managedObjectContext] save:&error]) {
+		// Update to handle the error appropriately.
+		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		exit(-1);  // Fail
+  }
 }
+
+
+#pragma mark -
+#pragma mark Core Data stack
+
+/**
+   Returns the managed object context for the application.
+   If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+*/
+- (NSManagedObjectContext *) managedObjectContext {
+
+  if (managedObjectContext != nil) {
+    return managedObjectContext;
+  }
+
+  NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+  if (coordinator != nil) {
+    managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [managedObjectContext setPersistentStoreCoordinator: coordinator];
+  }
+  return managedObjectContext;
+}
+
+
+/**
+   Returns the managed object model for the application.
+   If the model doesn't already exist, it is created by merging all of the models found in the application bundle.
+*/
+- (NSManagedObjectModel *)managedObjectModel {
+
+  if (managedObjectModel != nil) {
+    return managedObjectModel;
+  }
+  managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];
+  return managedObjectModel;
+}
+
+
+/**
+   Returns the persistent store coordinator for the application.
+   If the coordinator doesn't already exist, it is created and the application's store added to it.
+*/
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+
+  if (persistentStoreCoordinator != nil) {
+    return persistentStoreCoordinator;
+  }
+
+  NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent:kFeedItemModelFilename]];
+
+	NSError *error = nil;
+  persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+  if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeUrl options:nil error:&error]) {
+		// Update to handle the error appropriately.
+		NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+		exit(-1);  // Fail
+  }
+
+  return persistentStoreCoordinator;
+}
+
+
+#pragma mark -
+#pragma mark Application's documents directory
+
+/**
+   Returns the path to the application's documents directory.
+*/
+- (NSString *)applicationDocumentsDirectory {
+
+  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+  NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+  return basePath;
+}
+
+
+#pragma mark -
+#pragma mark Memory management
+
+- (void)dealloc {
+
+  [managedObjectContext release];
+  [managedObjectModel release];
+  [persistentStoreCoordinator release];
+
+	[tabBarController release];
+	[window release];
+	[super dealloc];
+}
+
 
 @end
 

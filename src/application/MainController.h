@@ -29,12 +29,26 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#import <UIKit/UIKit.h>
-#import <Three20/Three20.h>
+@interface MainController : NSObject <UIApplicationDelegate> {
 
-@interface MainController : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-  IBOutlet UIWindow*           mMainWindow;
-  IBOutlet UITabBarController* mTabBarController;
+    NSManagedObjectModel *managedObjectModel;
+    NSManagedObjectContext *managedObjectContext;
+    NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+    UIWindow *window;
+    UITabBarController *tabBarController;
 }
 
+- (IBAction)saveAction:sender;
+
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (nonatomic, readonly) NSString *applicationDocumentsDirectory;
+
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+
 @end
+

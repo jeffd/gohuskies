@@ -29,11 +29,39 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#import <Three20/Three20.h>
-#import "TouchXML.h"
+#import <UIKit/UIKit.h>
 
-@interface VideoDataSource : TTListDataSource {
+#import "HeadlineViewController.h"
 
+@interface FeedParser : NSObject {
+  NSURLConnection* mCurrentFeedConnection;
+  NSMutableArray* mParsedItemsList;
+  NSMutableData* mFeedData;
+  NSSet* mSimpleElementNames;
+
+  // Needed during parsing
+  NSMutableDictionary* mCurrentFeedItem;
+  NSMutableArray* mCurrentParseBatch;
+  NSUInteger mParsedFeedCounter;
+  NSMutableString* mCurrentParsedCharacterData;
+  BOOL mAccumulatingParsedCharacterData;
+  BOOL mDidAbortParsing;
+  BOOL mShouldStopParse;
+
+  id<FeedViewDelegate> mDelegate;
 }
+
+@property (nonatomic, retain) NSMutableArray *feedList;
+
+@property (nonatomic, retain) NSURLConnection *currentFeedConnection;
+@property (nonatomic, retain) NSMutableData *feedData;
+
+@property (nonatomic, retain) NSMutableDictionary *currentFeedDictionary;
+@property (nonatomic, retain) NSMutableString *currentParsedCharacterData;
+@property (nonatomic, retain) NSMutableArray *currentParseBatch;
+
+@property(nonatomic,assign) id<FeedViewDelegate> delegate;
+
+- (id)initWithURL:(NSURL*)feedURL;
 
 @end
